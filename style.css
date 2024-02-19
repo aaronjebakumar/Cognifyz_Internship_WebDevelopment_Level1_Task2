@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right,#6190E8,#A7BFE8);
+    /* background-color: rgb(229, 229, 203); */
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(15, 16, 53);
+    box-shadow: 2px 2px 50px rgb(127, 199, 217);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: rgb(127, 199, 217);
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: rgb(127, 199, 217);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(127, 199, 217);
+    transition: 0.3s;
+}
+
+.navbar a:hover::before,
+.navbar a:active::before{
+    width: 100%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+    height: 20px;
+    color: rgb(26, 18, 11);
+    width: 100%;
+    
+}
+.colour-change{
+    display: inline-block;
+    margin-left: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%;
+    background: gold;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.colour-change p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.btn{
+    margin-left: 50%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 34px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: rgb(26, 18, 11);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+.container{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 80px;
+    padding: 60px;
+    max-width: 30%;
+    background: rgb(127, 199, 217);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.container form{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+.container form h1{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.container form h4{
+    text-align: center;
+    margin-top: 10px;
+}
+.container form .form-control{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid silver;
+    margin: 10px 0 18px 0;
+    padding: 0 10px;
+
+}
+button{
+    margin-left: 50%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 34px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: rgb(26, 18, 11);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
